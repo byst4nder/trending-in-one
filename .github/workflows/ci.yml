@@ -32,7 +32,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         if: |
-          startsWith(github.repository, 'hu-qi') && 
+          startsWith(github.repository, 'byst4nder') && 
           startsWith(github.ref, 'refs/tags/')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
